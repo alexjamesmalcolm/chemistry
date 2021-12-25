@@ -2,9 +2,12 @@
   "name": "chemistry",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "src/index.ts",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "rm -rf dist && tsc",
+    "prepublishOnly": "npm run build"
   },
   "author": {
     "name": "Alexander James Malcolm",
@@ -12,6 +15,14 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "jest": "^27.4.5"
-  }
+    "jest": "^27.4.5",
+    "ts-jest": "^27.1.2",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  },
+  "files": [
+    "dist",
+    "src",
+    "!**/*.test.ts"
+  ]
 }
