@@ -1,9 +1,9 @@
-type Element = string;
+import { ElementName } from "../element";
 
 export interface LewisDotStructure {
   elements: {
     id: number;
-    element: Element;
+    element: ElementName;
   }[];
   bonds: {
     bondLevel: number;
