@@ -40,6 +40,6 @@ describe("getLewisDotStructureOfMolecule", () => {
   it("should generate lewis dot structure of formaldehyde", () => {
     const formula = "CH2O";
     const lewisDotStructure = getLewisDotStructureOfMolecule(formula);
-    expect(lewisDotStructure).toBe(formaldehydeLewisDotStructure);
+    expect(lewisDotStructure).toStrictEqual(formaldehydeLewisDotStructure);
   });
 });
