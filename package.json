@@ -24,5 +24,8 @@
     "dist",
     "src",
     "!**/*.test.ts"
-  ]
+  ],
+  "dependencies": {
+    "rambda": "^7.0.1"
+  }
 }
