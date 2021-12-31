@@ -118,4 +118,4 @@ export const ElementSymbol = {
   No: "No",
   Lr: "Lr",
 };
-export type ElementSymbol = typeof ElementSymbol[keyof typeof ElementSymbol];
+export type ElementSymbol = keyof typeof ElementSymbol;
