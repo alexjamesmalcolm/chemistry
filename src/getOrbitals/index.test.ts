@@ -148,6 +148,14 @@ describe("getFullOrbitals", () => {
 
     expect([...result].map(orbitToString)).toStrictEqual(expected);
   });
+  it("should get orbitals for Potassium", () => {
+    const element: ElementSymbol = "K";
+    const expected = ["1s2", "2s2", "2p6", "3s2", "3p6", "4s1"];
+
+    const result = getFullOrbitals(element);
+
+    expect([...result].map(orbitToString)).toStrictEqual(expected);
+  });
 });
 
 describe("getOrbitals", () => {
