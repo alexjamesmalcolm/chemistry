@@ -30,3 +30,22 @@ export type Orbit =
 
 export const orbitToString = (orbit: Orbit): string =>
   `${orbit.energyLevel}${orbit.type}${orbit.electrons}`;
+
+export const isOrbit = (a: any): a is Orbit => {
+  if (typeof a === "object") {
+    if (["s", "p", "d", "f"].includes(a["type"])) {
+      if (
+        Number.isInteger(a["energyLevel"]) &&
+        Number.isFinite(a["energyLevel"])
+      ) {
+        if (
+          Number.isInteger(a["electrons"]) &&
+          Number.isFinite(a["electrons"])
+        ) {
+          return true;
+        }
+      }
+    }
+  }
+  return false;
+};

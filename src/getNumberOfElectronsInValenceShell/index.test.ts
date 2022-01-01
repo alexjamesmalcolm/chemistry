@@ -11,4 +11,12 @@ describe("getNumberOfElectronsInValenceShell", () => {
 
     expect(result).toBe(expected);
   });
+  it("should get 6 for Oxygen", () => {
+    const element: ElementSymbol = "O";
+    const expected: number = 6;
+
+    const result = getNumberOfElectronsInValenceShell(element);
+
+    expect(result).toBe(expected);
+  });
 });
