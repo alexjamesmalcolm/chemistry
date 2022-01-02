@@ -1,5 +1,5 @@
 import { append, defaultTo, last, sum } from "rambda";
-import { ElementSymbol } from "../ElementSymbol";
+import { ElementSymbol, NobleGas } from "../ElementSymbol";
 import getAtomicNumber from "../getAtomicNumber";
 import { Orbit } from "../Orbit";
 
@@ -36,8 +36,6 @@ type NobleGasOrbitals =
   | "[Xe]"
   | "[Rn]"
   | "[Og]";
-
-type NobleGas = "He" | "Ne" | "Ar" | "Kr" | "Xe" | "Rn" | "Og";
 
 const getNobleGasOrbitalFromNobleGas = (
   nobleGas: NobleGas
