@@ -1,7 +1,7 @@
 import { ElementSymbol } from "../ElementSymbol";
 import getAtomicNumber from "../getAtomicNumber";
 
-export const rydbergConstantForAnInfiniteMass = 10973731.568508;
+export const rydbergConstantForAnInfiniteMass = 10973731.56816;
 const massOfProton = 1836.15267;
 const massOfElectron = 1;
 
